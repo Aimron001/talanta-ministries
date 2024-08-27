@@ -2,6 +2,8 @@
 
 export default function ServicesCarousel(){
     return (
-        <div>ServicesCarousel</div>
+        <div className="services-carousel">
+            
+        </div>
     )
 }
