@@ -2,7 +2,7 @@
 
 export default function About(){
     return (
-        <div className="container">
+        <div className="about-container">
   <h1>History</h1>
   <p>
     Talanta ministries was founded in 2015 by Rev Joseph Nzavi, Meggy Nzavi and
