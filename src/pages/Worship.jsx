@@ -1,12 +1,11 @@
-
-
+import WorshipLeaderPhoto from "../assets/worship-leader.jpg"
 export default function Worship(){
     return (
-        <div className="all">
+        <div className="ministry">
     <div className="container">
         <h1>Worship Ministry</h1>
-        <div className="leader">
-            <img src="#" />
+        <div className="ministry-leader">
+            <img src={WorshipLeaderPhoto}/>
             <div className="leader-name">
                 <h3>Geoffrey Oeri</h3>
                 <h4>Ministry Head</h4>

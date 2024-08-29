@@ -1,12 +1,13 @@
+import YouthLeaderPhoto from "../assets/worship-leader.jpg"
 
 export default function Youth(){
 
     return (
-        <div className="all">
+        <div className="ministry">
     <div className="container">
         <h1>Youth Ministry</h1>
-        <div className="leader">
-            <img src="#" />
+        <div className="ministry-leader">
+            <img src={YouthLeaderPhoto} />
             <div className="leader-name">
                 <h3>Allan Alliato</h3>
                 <h4>Ministry Leader</h4>

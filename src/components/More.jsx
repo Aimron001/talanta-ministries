@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import leadership from '../assets/leadership.jpg'
 
 export default function More(){
@@ -13,11 +14,13 @@ export default function More(){
                     <h3>Services and Weekly Activities</h3>
                 </div>                
             </div>
-            <div className="more-centre">
-                <div className="dvbs">
-                    <img src={leadership} />
-                    <h3>DVBS</h3>
-                </div>          
+            <div className="more-center">
+                <Link to="dvbs">
+                    <div className="more-dvbs-container">
+                        <div className="dvbs">DVBS</div>
+                        <div className="circle"></div>
+                    </div>
+                </Link>
             </div>
             <div className="more-right">
                 <div className="ministries">

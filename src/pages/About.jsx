@@ -1,4 +1,12 @@
-
+import Nzavi from '../assets/nzavi.jpg'
+import Levis from '../assets/levis.jpg'
+import Andrew from '../assets/andrew.jpg'
+import Ruth from '../assets/ruth.jpg'
+import Josephine from '../assets/josephine.jpg'
+import Nicholas from '../assets/nicholas.jpg'
+import Ngui from '../assets/ngui.jpg'
+import Meggy from '../assets/meggy.jpg'
+import Felistah from '../assets/felistah.jpg'
 
 export default function About(){
     return (
@@ -21,133 +29,142 @@ export default function About(){
     real vision owners.
   </p>
   <h1>Leadership</h1>
-  <div className="leader">
+  <div className="lead-pastor">
     <div className="leader-profile">
-      <img src="#" />
+      <img src={Nzavi} />
       <div className="leader-title">
         <h4>Pastor Joseph Nzavi</h4>
-        <h5>Chairman of the board and Lead pastor</h5>
+        <p>Chairman of the board and Lead pastor</p>
       </div>
     </div>
-    <p>
-      He is a former CITAM pastor and having ministered for nearly a decade in
-      various pastoral positions, the last one being as the founding senior
-      Pastor of Citam Nakuru - he has always felt the need and call to set up a
-      ministry like Citam to reach further to the lost.
-    </p>
-    <p>
-      He is happily married and has three children. He is also an active member
-      in the men&apos;s ministry and is remarkably enthusiastic about outreach and
-      missions. The love also that he has for kids goes without saying as
-      indescribable.
-    </p>
+    <div className="about-lead-pastor">
+      <p>
+        He is a former CITAM pastor and having ministered for nearly a decade in
+        various pastoral positions, the last one being as the founding senior
+        Pastor of Citam Nakuru - he has always felt the need and call to set up a
+        ministry like Citam to reach further to the lost.
+      </p>
+      <p>
+        He is also an active member
+        in the men&apos;s ministry and is remarkably enthusiastic about outreach and
+        missions. The love also that he has for kids goes without saying as
+        indescribable.
+      </p>
+    </div>
   </div>
+  <div className='leaders'>
   <div className="leader">
     <div className="leader-profile">
-        <img src="#" />
+        <img src={Levis} />
       <div className="leader-title">
         <h4>Doctor Levis Nguku</h4>
-        <h5>Secretary to the board.</h5>
+        <p>Secretary to the board.</p>
       </div>
     </div>
+    <hr />
     <p>
-      Serves in the Men&apos;s ministry, is rapturously paired, has two kids and
-      works in Machakos.
+      Serves in the Men&apos;s ministry.
     </p>
   </div>
   <div className="leader">
     <div className="leader-profile">
-    <img src="#" />
+    <img src={Andrew} />
       <div className="leader-title">
         <h4>Andrew Sibairo</h4>
-        <h5>Board&apos;s treasurer</h5>
+        <p>Board&apos;s treasurer</p>
       </div>
     </div>
+    <hr />
     <p>
-      Serves in the Men&apos;s ministry, works with The Navigators Kenya, married and
-      has got two kids.
+      Serves in the Men&apos;s ministry.
     </p>
   </div>
   <div className="leader">
     <div className="leader-profile">
-    <img src="#" />
+    <img src={Ruth} />
       <div className="leader-title">
         <h4>Pastor Ruth Kitonyi</h4>
-        <h5>Board member and pastor at TAMI Intl</h5>
+        <p>Board member and pastor</p>
       </div>
     </div>
+    <hr />
     <p>
       Serves as the church admin, is an active member of the women&apos;s ministry
-      and is affiliated with the ushering and hospitality ministry as well. She
-      is the mother of one child.
+      and is affiliated with the ushering and hospitality ministry as well.
     </p>
   </div>
   <div className="leader">
     <div className="leader-profile">
-    <img src="#" />
+    <img src={Josephine} />
       <div className="leader-title">
         <h4>Josephine Muasa</h4>
-        <h5>Board member</h5>
+        <p>Board member</p>
       </div>
     </div>
+    <hr />
     <p>
       Serves also in ushering and hospitality and is an active women&apos;s ministry
-      member. Has two kids and is gleefully married.
+      member.
     </p>
   </div>
   <div className="leader">
     <div className="leader-profile">
-    <img src="#" />
+    <img src={Nicholas} />
       <div className="leader-title">
         <h4>Nicholas Kioko</h4>
-        <h5>Board member</h5>
+        <p>Board member</p>
       </div>
     </div>
+    <hr />
     <p>
       Serves also in the ushering ministry and is an active member of the men&apos;s
-      ministry. He&apos;s got two kids and is cheerfully matched to his wife.
+      ministry.
     </p>
   </div>
   <div className="leader">
     <div className="leader-profile">
-    <img src="#" />
+    <img src={Ngui} />
       <div className="leader-title">
         <h4>Joseph Ngui</h4>
-        <h5>Board member</h5>
+        <p>Board member</p>
       </div>
     </div>
+    <hr />
     <p>
-      Chairman of the men&apos;s ministry and is responsible for the infrastrucrtural
+      Chairman of the men&apos;s ministry and is responsible for the infrastructural
       development and projects in the church.
     </p>
   </div>
   <div className="leader">
     <div className="leader-profile">
-    <img src="#" />
+    <img src={Meggy} />
       <div className="leader-title">
         <h4>Pastor Meggy Hawata</h4>
-        <h5>Board member</h5>
+        <p>Board member</p>
       </div>
     </div>
+    <hr />
     <p>
       Serves actively in Children&apos;s ministry and is an active member of the
-      Women&apos;s ministry as well.She is contentedly coupled and has two kids.
+      Women&apos;s ministry as well.
     </p>
   </div>
   <div className="leader">
     <div className="leader-profile">
-    <img src="#" />
+    <img src={Felistah} />
       <div className="leader-title">
         <h4>Felistah Rukunya</h4>
-        <h5>Board member</h5>
+        <p>Board member</p>
       </div>
     </div>
+    <hr />
+    <br />
     <p>
       Serves also as a teacher in the Children&apos;s ministry and is an active
-      participant in the women&apos;s ministry. She&apos;s a freelancer and a mother to
-      one.
+      participant in the women&apos;s ministry.
     </p>
   </div>
+</div>
 </div>
 
     )

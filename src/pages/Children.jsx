@@ -1,11 +1,12 @@
 
+import LizzPhoto from "../assets/lizz.jpg"
 
 export default function Children(){
     return (
-        <div className="container">
+        <div className="ministry">
         <h1>Children Ministry</h1>
-        <div className="leader">
-            <img src="#" />
+        <div className="ministry-leader">
+            <img src={LizzPhoto} />
             <div className="leader-name">
                 <h3>Tr. Lizz</h3>
                 <h4>Ministry Leader</h4>

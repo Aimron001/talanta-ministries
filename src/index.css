@@ -26,18 +26,31 @@ nav ul {
     gap: 5px;
 }
 nav li {
+    position: relative;
     list-style: none;
 }
 nav li a {
     text-decoration: none;
 }
-/* HOME */
-body {
-    /* background-image: url("./assets/TAMI.jpg"); */
-    /* background-size: cover; */
+.sub-menu {
+    display: none;
 }
-
-.home-container {
+.sub-menu > ul {
+    padding: 5px;
+    background-color: #e9e7e7;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+}
+nav ul li:hover .sub-menu {
+    display: block;
+  }
+/* HOME */
+.home-more{
+    background-image: url("./assets/TAMI.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 .home {
     padding: 20px;
@@ -73,10 +86,10 @@ body {
 .socials > svg:hover {
     font-size: 3.1rem;
 }
-.services {
+.weekly-services {
     text-align: center;
 }
-.services img {
+.weekly-services img {
     width: 200px;
     
 }
@@ -94,33 +107,129 @@ body {
             /* } */
             /* MORE */
 .more {
-    /* width: 100vw; */
+    padding: 20px;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.531);
-    /* background-color: rgb(32, 45, 23); */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.531);
     flex-wrap: wrap;
 }
-.more > div {
-    /* flex: 1; */
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    /* background-color: chartreuse; */
-}
+
 .more-left, .more-right, .more-centre{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    
+}
+.more-center {
+    /* width: 100%; */
+    flex: 1;
+    position: relative;
+    /* display: none; */
+    margin: 0;
+    padding: 0;
+    /* width: 300px; */
+    /* background-color: #fff958 !important; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
 }
 .more > div > div {
     color: #fff;
     background-color: rgb(48, 88, 8);
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    /* height: 300px; */
+    box-shadow: 0 0 8px  rgba(0, 0, 0, 0.7);
 }
 .more img {
     width: 100%;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+    border: 4px solid transparent;
+    border-bottom: 4px solid #fff958;  
+    border-top: 4px solid #b858ff;  
+    border-radius: 50%;
+    box-shadow: 0 0 8px  rgba(0, 0, 0, 0.7);
+
+    animation: animate 6s linear infinite;
+}
+.circle:before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    border: 4px solid transparent;
+    border-bottom: 4px solid #e74c3c;  
+    border-top: 4px solid #3ce7d8;  
+    border-radius: 50%;
+    box-shadow: 0 0 8px  rgba(255, 255, 255, 0.7);
+
+    animation: animate 4s linear infinite;
+}
+.circle:after{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    bottom: 24px;
+    right: 24px;
+    border: 4px solid transparent;
+    border-bottom: 4px solid #39ff8d;  
+    border-top: 4px solid #ff67ad;  
+    border-radius: 50%;
+    box-shadow: 0 0 8px  rgba(0, 0, 0, 0.7);
+
+    animation: animate 2s linear infinite;
+}
+.dvbs {
+    background: url(../images/dvbs.jpg) no-repeat;
+    
+    background-size: cover;
+    border: 3px solid orange;
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+.more-dvbs-container{
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
 }
 /* DVBS */
 .dvbs-hero {
@@ -165,9 +274,79 @@ body {
 /* ABOUT */
 .about-container {
     width: 80%;
+    max-width: 940px;
     margin: 20px auto;
 }
-.leader {
+.leaders {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.leader {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Soft shadow */
+              0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle bottom shadow */
+  border-radius: 8px;
+}
+.about-container img{
+    /* width: 300px; */
+    /* max-height: 300px; */
+    /* height: 200px; */
+    object-fit:fill;
+    border-radius: 5px 5px 0 0;
+
+}
+/* .leader-photo {
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+} */
+.leader-title > p {
+    font-size: 1.1rem;
+}
+.lead-pastor {
+    margin: 10px;
+    display: flex;
+    max-width: 940px;
+    margin: auto;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Soft shadow */
+    0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle bottom shadow */
+border-radius: 8px;
+
+}
+.lead-pastor img {
+    width: 300px;
+}
+.about-lead-pastor {
+    padding: 20px;
+}
+.leader-title {
+    text-align: center;
+}
+hr {
+    margin: 5px 0;
+    width: 100%;
+}
+.leader > p {
+    text-align: left;
+    padding: 10px;
+}
+
+/* Ministries */
+.ministry {
+    width: 80%;
+    margin: auto;
+}
+.ministry-leader img {
+    width: 300px;
+    height: 300px;
 }
