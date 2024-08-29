@@ -2,7 +2,6 @@
 export default function DvbsActivities(){
     return (
         <div id="activities" className="activities-tab tab-content">
-    <h1 id="tab-activities">DVBS ACTIVITES</h1>
     <ul>
       <li>Drills and hype sessions</li>
       <li>Taking of Pledges</li>

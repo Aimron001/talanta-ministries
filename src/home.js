@@ -97,3 +97,4 @@ else if(weekOfComingSunday === 4)
 {
   document.getElementById(wkID).innerText = soon;
 }
+

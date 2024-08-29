@@ -3,7 +3,6 @@
 export default function DvbsParents(){
     return (
         <div id="parents" className="dvbs-parents-tab tab-content">
-    <h2 id="tab-parents">DVBS PARENTS</h2>
     <p>
       After having the entire week dedicated to the kids, after all that fun,
       it&apos;s only fair that we give their parents a similar experience as well.

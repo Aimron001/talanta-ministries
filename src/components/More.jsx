@@ -5,14 +5,18 @@ export default function More(){
     return (
         <div className="more">
             <div className="more-left">
-                <div className="leadership">
-                    <img src={leadership} />
-                    <h3>Leadership</h3>
-                </div>
-                <div className="programme">
-                    <img src={leadership} />
-                    <h3>Services and Weekly Activities</h3>
-                </div>                
+                <Link to='about'>
+                    <div className="more-item">
+                        <img src={leadership} />
+                        <h3>Leadership</h3>
+                    </div>
+                </Link>
+                <Link to="services">
+                    <div className="more-item">
+                        <img src={leadership} />
+                        <h3>Services and Weekly Activities</h3>
+                    </div>                
+                </Link>
             </div>
             <div className="more-center">
                 <Link to="dvbs">
@@ -23,14 +27,18 @@ export default function More(){
                 </Link>
             </div>
             <div className="more-right">
-                <div className="ministries">
-                    <img src={leadership} />
-                    <h3>Ministries</h3>
-                </div>          
-                <div className="news">
-                    <img src={leadership} />
-                    <h3>News</h3>
-                </div>       
+                <Link to="ministries">
+                    <div className="more-item">
+                        <img src={leadership} />
+                        <h3>Ministries</h3>
+                    </div>          
+                </Link>
+                <Link to='news'>
+                    <div className="more-item">
+                        <img src={leadership} />
+                        <h3>News</h3>
+                    </div>       
+                </Link>
 
             </div>
         </div>

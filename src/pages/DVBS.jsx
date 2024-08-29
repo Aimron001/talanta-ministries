@@ -2,15 +2,18 @@ import DvbsActivities from "../components/DvbsActivities";
 import DvbsGallery from "../components/DvbsGallery";
 import DvbsParents from "../components/DvbsParents";
 import DvbsTeams from "../components/DvbsTeams";
+import Hero from "../components/Hero";
+import { useState } from "react";
 
 
 export default function DVBS(){
+
+  const [activeTab, setActiveTab] = useState('activities');
+
     return (
       <>
-    <div className="dvbs-hero">
-      <h1 id="dvbs-name">DVBS</h1>
-    </div>
-        <div className="dvbs-container">
+        <Hero title="Daily Vacational Bible School (DVBS)" />
+        <div className="ministry-container">
   <div className="about-dvbs">
     <p>
       Daily Vacational Bible School is, simply put, a <b>BANGER!!</b> A
@@ -36,18 +39,16 @@ export default function DVBS(){
     </ul>
   </div>
   <div className="tabs-nav">
-    <ul>
-      <li id="act"><a className="activities" href="#tab-activities">Activities</a></li>
-      <li><a className="parents" href="#tab-parents">Parents</a></li>
-      <li><a className="teams" href="#tab-teams">Teams</a></li>
-      <li><a className="gallery" href="#">Gallery</a></li>
-    </ul>
+     <button className={activeTab === 'activities' && 'active-tab'} onClick={() => setActiveTab('activities')}>Activities</button>
+     <button className={activeTab === 'parents' && 'active-tab'} onClick={() => setActiveTab('parents')}>Parents</button>
+    <button className={activeTab === 'teams' && 'active-tab'} onClick={() => setActiveTab('teams')}>Teams</button>
+     {/* <button className={activeTab === 'gallery' && 'active-tab'} onClick={() => setActiveTab('gallery')}>Gallery</button> */}
   </div>
   <div className="tabs">
-    <DvbsActivities />
-    <DvbsParents />
-    <DvbsTeams />
-    <DvbsGallery />
+  {activeTab === 'activities' && <DvbsActivities />}
+                {activeTab === 'parents' && <DvbsParents />}
+                {activeTab === 'teams' && <DvbsTeams />}
+                {activeTab === 'gallery' && <DvbsGallery />}
   </div>
   
   </div>

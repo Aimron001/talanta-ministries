@@ -1,10 +1,12 @@
 
 import LizzPhoto from "../assets/lizz.jpg"
+import Hero from "../components/Hero"
 
 export default function Children(){
     return (
-        <div className="ministry">
-        <h1>Children Ministry</h1>
+        <>
+            <Hero title="Children's Ministry" />
+        <div className="ministry ministry-container">
         <div className="ministry-leader">
             <img src={LizzPhoto} />
             <div className="leader-name">
@@ -84,6 +86,7 @@ export default function Children(){
             <p>photos</p>
     </div>
     </div>
+    </>
 
     )
 }

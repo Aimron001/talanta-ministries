@@ -3,7 +3,6 @@
 export default function DvbsTeams(){
     return (
         <div id="teams" className="dvbs-teams-tab tab-content">
-    <h2 id="tab-teams">DVBS TEAMS</h2>
     <p>
       The massive success and result obtained could never be possible without
       the participation of ALL the church&apos;s ministries and partners as well.

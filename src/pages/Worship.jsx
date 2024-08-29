@@ -1,9 +1,11 @@
 import WorshipLeaderPhoto from "../assets/worship-leader.jpg"
+import Hero from '../components/Hero'
 export default function Worship(){
     return (
-        <div className="ministry">
+        <>
+        <Hero title="Worship Ministry" />
+        <div className="ministry ministry-container">
     <div className="container">
-        <h1>Worship Ministry</h1>
         <div className="ministry-leader">
             <img src={WorshipLeaderPhoto}/>
             <div className="leader-name">
@@ -26,6 +28,6 @@ export default function Worship(){
         </ul>
     </div>
     </div>
-
+</>
     )
 }

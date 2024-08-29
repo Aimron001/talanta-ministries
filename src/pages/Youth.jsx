@@ -1,11 +1,13 @@
 import YouthLeaderPhoto from "../assets/worship-leader.jpg"
+import Hero from "../components/Hero"
 
 export default function Youth(){
 
     return (
-        <div className="ministry">
+        <>
+        <Hero title="Youth Ministry" />
+        <div className="ministry ministry-container">
     <div className="container">
-        <h1>Youth Ministry</h1>
         <div className="ministry-leader">
             <img src={YouthLeaderPhoto} />
             <div className="leader-name">
@@ -44,6 +46,6 @@ export default function Youth(){
         <p>Remember! <b>KEEP RISING!!</b></p>
     </div>
     </div>
-
+</>
     )
 }

@@ -1,8 +1,7 @@
-
-
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import EmailIcon from '@mui/icons-material/Email';
 export default function ContactUs(){
     return (
-        <div className="container">
           <div className="contacts">
             <p>We are Located at Machakos showground</p>
             <div className="map">
@@ -17,18 +16,14 @@ export default function ContactUs(){
               ></iframe>
             </div>
             <h3>Contacts</h3>
-            <pre>
-                Call us: +254700000001
-                        +254700000002
-            </pre>            
+            <div>
+            <LocalPhoneIcon />
+            <pre>Call us: +254700000001
+                          +254700000002
+              </pre>
+              <EmailIcon />: talantaministries@gmail.com                    
+            </div>            
           </div>
-          <div className="contacts-form">
-            <form>
-              
-            </form>
-
-          </div>
-</div>
 
     )
 }
