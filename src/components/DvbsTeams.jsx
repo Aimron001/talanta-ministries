@@ -1,4 +1,6 @@
-
+import dvbsSphoto from '../assets/dvbs-s.jpg'
+import dvbsHelpersPhoto from '../assets/dvbs-helpers.jpg'
+import dvbsUshersPhoto from '../assets/dvbs-usher.jpg'
 
 export default function DvbsTeams(){
     return (
@@ -11,18 +13,17 @@ export default function DvbsTeams(){
     <section className="ushering-hospitality">
       <h3>Ushering and hospitality</h3>
       <p>These are simply put, the most devout amongst the whole lot.</p>
+      <img src={dvbsUshersPhoto} />
       <p>
         From their early arrivals, clocking in as early as 6:00AM to their
         outlandishly surreal coordination in preparation of the meals, drinks
         and assortment of the goodies, these guys work cannot go unnoticed
       </p>
-      <img src="#" />
 
       <p>
         Their dedication and levels of impeccability are unparralled.
         <b>BIG UPS!</b>
       </p>
-      <img src="#" />
     </section>
     <section className="transport-security">
       <h3>Transport and Security</h3>
@@ -35,6 +36,7 @@ export default function DvbsTeams(){
         the minds of these men. Responsible for the transportation of your child
         to and fro the venue, safety is their number one priority. (Pics)
       </p>
+      <img src={dvbsSphoto} />
       <p>
         Also, while here at the venue, heh! No one with any malevolent or ill
         intentions is getting past these guys. After all your child&apos;s safety is
@@ -57,7 +59,7 @@ export default function DvbsTeams(){
         and clean up crew are so fixated on the same. “...” … (Head of team and
         certified Dr.)
       </p>
-      <img src="#" />
+      <img src={dvbsHelpersPhoto} />
     </section>
   </div>
     )

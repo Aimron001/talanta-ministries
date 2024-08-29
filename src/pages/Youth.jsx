@@ -1,11 +1,11 @@
 import YouthLeaderPhoto from "../assets/worship-leader.jpg"
 import Hero from "../components/Hero"
-
+import YouthBg from '../assets/youth-bg.jpg'
 export default function Youth(){
 
     return (
         <>
-        <Hero title="Youth Ministry" />
+        <Hero title="Youth Ministry" bg={YouthBg}/>
         <div className="ministry ministry-container">
     <div className="container">
         <div className="ministry-leader">

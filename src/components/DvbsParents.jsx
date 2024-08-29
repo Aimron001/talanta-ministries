@@ -1,4 +1,4 @@
-
+import dvbsParentsPhoto from '../assets/dvbs-parents.jpg'
 
 export default function DvbsParents(){
     return (
@@ -9,7 +9,7 @@ export default function DvbsParents(){
       Or, something close to it.
     </p>
     <p>Therefore, over the weekend, we host the parents over for their DVBS.</p>
-    <img src="#" />
+    <img src={dvbsParentsPhoto} />
 
     <p>
       Same theme, same message, similar songs and even the age groups. Yep!
@@ -19,13 +19,13 @@ export default function DvbsParents(){
       Parents arrive mid-morning and are taken through the same regimen as their
       kids that week. From the drills, to the hype and even puppetry.
     </p>
-    <img src="#" />
+    {/* <img src="#" /> */}
 
     <p>
       Theirs however is a more compact and sophisticated mega lesson delivered
       to them by a number of various speakers.
     </p>
-    <img src="#" />
+    {/* <img src="#" /> */}
 
     <p>
       They are apprised on how to further infuse and build upon what their kids

@@ -1,9 +1,11 @@
 import WorshipLeaderPhoto from "../assets/worship-leader.jpg"
 import Hero from '../components/Hero'
+import worshipBg from "../assets/worship-bg.jpg"
+
 export default function Worship(){
     return (
         <>
-        <Hero title="Worship Ministry" />
+        <Hero title="Worship Ministry" bg={worshipBg }/>
         <div className="ministry ministry-container">
     <div className="container">
         <div className="ministry-leader">

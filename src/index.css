@@ -265,7 +265,7 @@ nav ul li:hover .sub-menu {
     /* padding: 20px; */
     background-color: #0a4e26;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     margin-bottom: -40px;
 }
 /* DVBS */
@@ -292,7 +292,7 @@ nav ul li:hover .sub-menu {
     padding: 10px;
     font-size: 1.2rem;
     border: none;
-    background-color: rgb(255, 180, 40);
+    background-color: rgb(179, 234, 103);
 }
 .tabs-nav > button:hover {
     background-color: rgb(255, 255, 255);
@@ -302,7 +302,12 @@ nav ul li:hover .sub-menu {
     background-color: #fff !important;
     border-top: 3px solid rgb(48, 88, 8) !important;
 }
-
+.tab-content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
 .ministry-container ul {
     padding-left: 30px;
 }
@@ -382,9 +387,14 @@ hr {
     width: 80%;
     margin: auto;
 }
+.ministry-leader {
+    display: flex;
+    gap: 20px;
+}
 .ministry-leader img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 /* Base styles for the home and more containers */
@@ -510,3 +520,7 @@ hr {
     }
 }
 
+.contacts {
+    width: 60%;
+    margin: auto;
+}

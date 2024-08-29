@@ -1,11 +1,11 @@
 
 import LizzPhoto from "../assets/lizz.jpg"
 import Hero from "../components/Hero"
-
+import childrenBg from "../assets/children-bg.jpg"
 export default function Children(){
     return (
         <>
-            <Hero title="Children's Ministry" />
+            <Hero title="Children's Ministry" bg={childrenBg}/>
         <div className="ministry ministry-container">
         <div className="ministry-leader">
             <img src={LizzPhoto} />

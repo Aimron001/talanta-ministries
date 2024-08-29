@@ -7,11 +7,15 @@ import Nicholas from '../assets/nicholas.jpg'
 import Ngui from '../assets/ngui.jpg'
 import Meggy from '../assets/meggy.jpg'
 import Felistah from '../assets/felistah.jpg'
+import Hero from '../components/Hero'
+import AboutBG from '../assets/about-bg.jpg'
 
 export default function About(){
     return (
-        <div className="about-container">
-  <h1>History</h1>
+      <>
+      <Hero title="About" bg={AboutBG} />
+        <div className="ministry-container about-container">
+  
   <p>
     Talanta ministries was founded in 2015 by Rev Joseph Nzavi, Meggy Nzavi and
     other families. They two had served with CITAM for close to two decades as
@@ -166,6 +170,6 @@ export default function About(){
   </div>
 </div>
 </div>
-
+</>
     )
 }

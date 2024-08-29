@@ -1,3 +1,9 @@
+import dvbsHypePhoto from '../assets/dvbs-hype.jpg'
+import dvbsGamesPhoto from '../assets/dvbs-games.jpg'
+import dvbsDancePhoto from '../assets/dvbs-dance.jpg'
+import dvbsClassPhoto from '../assets/dvbs-class.jpg'
+import dvbsLessonPhoto from '../assets/dvbs-lesson.jpg'
+
 
 export default function DvbsActivities(){
     return (
@@ -26,6 +32,7 @@ export default function DvbsActivities(){
       warmed up. After that, they march into the sanctuary ready for drills and
       pledges with Pst. Mtoto.
     </p>
+    <img src={dvbsHypePhoto}  alt="dvbs hype photo" />
     <h3>Drills and Pledges</h3>
     <p>
       The Bible and Christian flag. These are what we use to conduct the
@@ -41,7 +48,7 @@ export default function DvbsActivities(){
     </p>
     <li>
       <a href="#">I love the bible Stand up, stand up for Jesus </a> OR
-      <a href="#">OR I may never march in the infantry</a>
+      <a href="#"> OR I may never march in the infantry</a>
     </li>
 
     <h3>Praise and Worship and Dance</h3>
@@ -56,10 +63,10 @@ export default function DvbsActivities(){
       the Lord in truth and in spirit.
     </p>
     <p>This is so beautiful and that is why we value these times.</p>
-    <img src="#" />
-    <h3>className Time!</h3>
+    <img src={dvbsDancePhoto} />
+    <h3>Time!</h3>
     <p>
-      After having a release prayer, the kids scurry to their respective classNamees
+      After having a release prayer, the kids scurry to their respective classes
       for the day&apos;s lesson based off the day&apos;s theme.
     </p>
     <h4>Teachers and Helpers</h4>
@@ -68,7 +75,6 @@ export default function DvbsActivities(){
       drilling into the kids God&apos;s Word and ensuring that Christ is their firm
       foundation and the centre of it all.
     </p>
-    <img src="#" />
 
     <p>
       The teachers, helpers and the plethora of volunteers are trained by the
@@ -78,7 +84,7 @@ export default function DvbsActivities(){
       ideologies inculcated into every fibre of their very being by people
       devoted to doing so. That is our creed.
     </p>
-    <img src="#" />
+    <img src={dvbsLessonPhoto} />
 
     <p>
       The trustee helpers are always present in className with the teachers to help
@@ -86,7 +92,6 @@ export default function DvbsActivities(){
       delivery. They too are the one responsible for facilitation of the snacks
       per className and are present during game time.
     </p>
-    <img src="#" />
 
     <h3>Games</h3>
     <p>Yay!</p>
@@ -98,9 +103,7 @@ export default function DvbsActivities(){
       like.
     </p>
     <p></p>
-    <img src="#" />
-
-    <p></p>
+    <img src={dvbsGamesPhoto} />
     <p>
       In case of any injuries, we have a very able and alert first aid team on
       standby which is well-equipped and, the safety of the children is their
@@ -108,7 +111,7 @@ export default function DvbsActivities(){
     </p>
     <p></p>
     <h3>Snack Time!!</h3>
-    <img src="#" />
+    {/* <img src="#" /> */}
 
     <p>
       Games are normally draining and with energy levels in kids being at an all
@@ -125,16 +128,12 @@ export default function DvbsActivities(){
       kids and to the younger ones, their colourings. There&apos;s always something
       for everyone.
     </p>
-    <img src="#" />
-
+    <img src={dvbsClassPhoto} />
     <h3>Back to the Sanctuary</h3>
-    <img src="#" />
-
     <p>
       The kids are taken through a brief session of song and dance by the DVBS
       choir. A fun, action-packed jam session.
     </p>
-    <img src="#" />
 
     <p>
       Now, it&apos;s time for recitations, memory work if you would. On day one each
@@ -142,16 +141,13 @@ export default function DvbsActivities(){
       following in order to qualify as contenders for a mystery gift on Friday.
       The earlier the recitation&apos;s done, the bigger the present.
     </p>
-    <img src="#" />
 
     <p>
       Simbaaaaaa!! The kids call out as they wait for the King of the Jungle to
       show up with his entourage.
     </p>
-    <img src="#" />
 
     <p>Simba, Mutuku, Kaleche, Princess, Ahmed, Twiga and Monkey.</p>
-    <img src="#" />
 
     <p>
       It&apos;s now time for a general recapand demo of the day&apos;s teaching by Simba
@@ -160,7 +156,6 @@ export default function DvbsActivities(){
       and Monkey making their way from the “wild” just to be with the kids, it
       all the more plausible.
     </p>
-    <img src="#" />
 
     <h3>Prayer Sessions</h3>
     <p>
@@ -169,7 +164,6 @@ export default function DvbsActivities(){
       youngins and further emphasize the importance of what&apos;s been taught to
       them that week.
     </p>
-    <img src="#" />
 
     <p>
       A few orations and it is time to commit and commission the children to go

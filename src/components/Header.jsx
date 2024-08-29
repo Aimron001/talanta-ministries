@@ -12,7 +12,7 @@ export default function Header(){
                 <ul>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li>
-                        <NavLink to="ministries" id="ministries">Ministries</NavLink>
+                        <NavLink to="ministries/children" id="ministries">Ministries</NavLink>
                         <div className="sub-menu">
                             <ul className="sub-menu">
                                 <li><NavLink to="ministries/children">Children</NavLink></li>
@@ -23,7 +23,7 @@ export default function Header(){
                         
                     </li>
                     <li><NavLink to="dvbs">DVBS</NavLink></li>
-                    <li><NavLink to="news">News</NavLink></li>
+                    {/* <li><NavLink to="news">News</NavLink></li> */}
                     <li><NavLink to="about">About</NavLink></li>
                     <li><NavLink to="contact-us">Contact us</NavLink></li>
                 </ul>

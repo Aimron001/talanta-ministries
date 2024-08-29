@@ -3,6 +3,7 @@ import DvbsGallery from "../components/DvbsGallery";
 import DvbsParents from "../components/DvbsParents";
 import DvbsTeams from "../components/DvbsTeams";
 import Hero from "../components/Hero";
+import dvbsBg from '../assets/dvbs-h.jpg'
 import { useState } from "react";
 
 
@@ -12,7 +13,7 @@ export default function DVBS(){
 
     return (
       <>
-        <Hero title="Daily Vacational Bible School (DVBS)" />
+        <Hero title="Daily Vacational Bible School (DVBS)"bg={dvbsBg} />
         <div className="ministry-container">
   <div className="about-dvbs">
     <p>
